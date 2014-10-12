@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Net.Pokeshot.JiveSdk.Models
 {
-    public class Post: Content
+    public class Post: Content{
         public List<Attachment> attachments {get;set;}
         public DateTime publishDate {get;set;}
         public Boolean restrictComments {get;set;}
-        public 
-    {
+         
+    
     }
 }

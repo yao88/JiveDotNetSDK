@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Net.Pokeshot.JiveSdk.Models
 {
-   public class Update: Content
-       public Number latitude {get;set;}
-       public Number longitude {get;set;}
+   public class Update: Content{
+       public string latitude {get;set;}
+       public string longitude { get; set; }
        public Update repost {get;set;}
        
-    {
+    
     }
 }

@@ -11,8 +11,8 @@ namespace Net.Pokeshot.JiveSdk.Models
          public string answer { get; set; }
          public List<string> helpful { get; set; }
          public OnBehalfOf onBehalfOf { get; set; }
-         public Boolean question { get; set; }
+         public bool question { get; set; }
          public string resolved { get; set; }
-         public Boolean restrictReplies 
+         public bool restrictReplies { get; set; }
     }
 }

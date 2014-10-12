@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Net.Pokeshot.JiveSdk.Models
 {
-   public class Stage; Content 
+   public class Stage: Content {
        public string backgroundColor {get;set;}
        public string foregroundColor {get;set;}
        public int ideasCount {get;set;}
@@ -14,6 +14,6 @@ namespace Net.Pokeshot.JiveSdk.Models
        public Boolean stageEnabled {get;set;}
        public Boolean votingEnabled {get;set;}
         
-    {
+    
     }
 }

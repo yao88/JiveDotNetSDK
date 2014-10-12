@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Net.Pokeshot.JiveSdk.Models
 {
-     public class Document: Content
+     public class Document: Content{
          public Person approvers {get;set;}
          public string authorship {get;set;}
          public Person editingBy {get;set;}
@@ -14,6 +14,6 @@ namespace Net.Pokeshot.JiveSdk.Models
          public Boolean restrictComments {get;set;}
          
 
-     {
+     
     }
 }
