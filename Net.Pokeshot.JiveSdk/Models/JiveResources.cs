@@ -17,6 +17,7 @@ namespace Net.Pokeshot.JiveSdk.Models
         public JiveResourceEntry likes { get; set; }
         public JiveResourceEntry read { get; set; }
         public JiveResourceEntry html { get; set; }
+        public JiveResourceEntry images { get; set; }
         public JiveResourceEntry attachments { get; set; }
         public JiveResourceEntry followingIn { get; set; }
         public JiveResourceEntry entitlements { get; set; }

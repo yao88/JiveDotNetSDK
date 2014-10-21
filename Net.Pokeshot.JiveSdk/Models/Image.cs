@@ -17,6 +17,7 @@ namespace Net.Pokeshot.JiveSdk.Models
        public DateTime published { get; set; }
        public string @ref {get; set;}
        public Object resources {get; set;}
+       public int index { get; set; }
        public int size {get; set;}
        public List<string> tags {get; set;}
        public string type {get; set;}
