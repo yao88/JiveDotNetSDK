@@ -8,22 +8,20 @@ using System.Threading.Tasks;
 
 namespace Net.Pokeshot.JiveSdk.Models.Dto
 {
- 
-        [DataContract]
-        public class JiveInstanceDto
-        {
-            [Required]
-            [DataMember(IsRequired = true)]
-            public string name { get; set; }
-            [Required]
-            [DataMember(IsRequired = true)]
-            public string jiveUrl { get; set; }
+    [DataContract]
+    public class JiveInstanceDto
+    {
+        [Required]
+        [DataMember(IsRequired = true)]
+        public string name { get; set; }
+        [Required]
+        [DataMember(IsRequired = true)]
+        public string jiveUrl { get; set; }
 
-            [DataMember]
-            public string version { get; set; }
-            [Required]
-            [DataMember(IsRequired = true)]
-            public string communityLanguage { get; set; }
-        }
-    
+        [DataMember]
+        public string version { get; set; }
+        [Required]
+        [DataMember(IsRequired = true)]
+        public string communityLanguage { get; set; }
+    }
 }

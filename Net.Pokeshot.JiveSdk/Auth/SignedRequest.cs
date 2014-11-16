@@ -84,7 +84,7 @@ namespace Net.Pokeshot.JiveSdk.Auth
             {
                 //Example for retrieving config settings from the web config
                 //bool oauthValidationEnabled = Convert.ToBoolean(System.Configuration.ConfigurationManager.AppSettings["IsOauthValidationEnabled"]);
-                bool oauthValidationEnabled = true;
+                bool oauthValidationEnabled = false;
                 string uri = actionContext.Request.RequestUri.AbsolutePath;
                 string host = actionContext.Request.RequestUri.Host;
 
@@ -241,7 +241,7 @@ namespace Net.Pokeshot.JiveSdk.Auth
             }
             catch (Exception ex)
             {
-                //NewRelic.Api.Agent.NewRelic.NoticeError(ex);
+                NewRelic.Api.Agent.NewRelic.NoticeError(ex);
                 actionContext.Response = new System.Net.Http.HttpResponseMessage();
                 actionContext.Response.Content = null;
                 actionContext.Response.StatusCode = HttpStatusCode.InternalServerError;
