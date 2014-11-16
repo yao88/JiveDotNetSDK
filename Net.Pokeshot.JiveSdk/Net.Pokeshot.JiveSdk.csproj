@@ -67,9 +67,11 @@
     <Compile Include="Models\Document.cs" />
     <Compile Include="Models\Dto\HealthStatusDto.cs" />
     <Compile Include="Models\Dto\JiveAddonRegistrationDto.cs" />
+    <Compile Include="Models\Dto\JiveInstanceDto.cs" />
     <Compile Include="Models\Dto\OAuthGrantTokenDto.cs" />
     <Compile Include="Models\Dto\OAuthRequestDto.cs" />
     <Compile Include="Models\Dto\UserDto.cs" />
+    <Compile Include="Models\Dto\UserUpdateDto.cs" />
     <Compile Include="Models\Dto\WebhookActivityDto.cs" />
     <Compile Include="Models\Dto\WorkflowDefinitionDto.cs" />
     <Compile Include="Models\ExternalStreamActivity.cs" />

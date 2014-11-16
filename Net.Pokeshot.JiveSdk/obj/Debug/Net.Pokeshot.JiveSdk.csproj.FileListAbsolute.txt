@@ -18,3 +18,14 @@ C:\Users\Nils\Source\Repos\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\EntityFr
 C:\Users\Nils\Source\Repos\JiveDotNetSDK\Net.Pokeshot.JiveSdk\obj\Debug\Net.Pokeshot.JiveSdk.csprojResolveAssemblyReference.cache
 C:\Users\Nils\Source\Repos\JiveDotNetSDK\Net.Pokeshot.JiveSdk\obj\Debug\Net.Pokeshot.JiveSdk.dll
 C:\Users\Nils\Source\Repos\JiveDotNetSDK\Net.Pokeshot.JiveSdk\obj\Debug\Net.Pokeshot.JiveSdk.pdb
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\Net.Pokeshot.JiveSdk.dll.config
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\Net.Pokeshot.JiveSdk.dll
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\Net.Pokeshot.JiveSdk.pdb
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\EntityFramework.dll
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\EntityFramework.xml
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\obj\Debug\Net.Pokeshot.JiveSdk.csprojResolveAssemblyReference.cache
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\obj\Debug\Net.Pokeshot.JiveSdk.dll
+C:\Users\Nils\dev\JiveDotNetSDK\Net.Pokeshot.JiveSdk\obj\Debug\Net.Pokeshot.JiveSdk.pdb
