@@ -19,11 +19,7 @@ namespace Net.Pokeshot.JiveSdk.Models.Dto
         [DataMember]
         public string emailAddress { get; set; }
         [DataMember]
-        public string department { get; set; }
-        [DataMember]
-        public string preferredLanguage { get; set; }
-        [DataMember]
-        public bool sidebarCollapsed { get; set; }
+        public int shortId { get; set; }
     }
 }
 
