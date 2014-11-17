@@ -96,6 +96,7 @@
     <Compile Include="Models\ContentVideo.cs" />
     <Compile Include="Models\Discussion.cs" />
     <Compile Include="Models\Document.cs" />
+    <Compile Include="Models\Dto\ErrorDto.cs" />
     <Compile Include="Models\Dto\HealthStatusDto.cs" />
     <Compile Include="Models\Dto\JiveAddonRegistrationDto.cs" />
     <Compile Include="Models\Dto\JiveInstanceDto.cs" />
