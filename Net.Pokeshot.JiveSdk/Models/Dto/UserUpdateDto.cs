@@ -20,6 +20,6 @@ namespace Net.Pokeshot.JiveSdk.Models.Dto
         public string emailAddress { get; set; }
         [DataMember]
         public int shortId { get; set; }
-    
     }
 }
+
