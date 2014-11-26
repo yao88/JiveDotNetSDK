@@ -15,21 +15,21 @@ namespace DownloadProfiles
       
         static  void Main(string[] args)
         {
-            getPeople();
+            getPeople("https://jiveinstance.jiveon.com/api/core/v3/people");
 
             Console.ReadLine();
         }
 
-        static async void getPeople()
+        static async void getPeople(string apiUrl)
         {
             try
             {
-                string jiveCommunityUrl = "https://jiveinstance.jiveon.com";
+
+                Console.WriteLine("Using " + apiUrl);
 
 
-
-                string userName = "username";
-                string password = "password";
+                string userName = "user";
+                string password = "passsword";
 
 
                 System.Net.Http.HttpClientHandler jiveHandler = new System.Net.Http.HttpClientHandler();
@@ -38,7 +38,7 @@ namespace DownloadProfiles
 
 
                 NetworkCredential myCredentials = new NetworkCredential(userName, password);
-                myCredentials.Domain = jiveCommunityUrl + "/api/core/v3";
+                myCredentials.Domain = apiUrl;
 
 
                 string cre = String.Format("{0}:{1}", userName, password);
@@ -61,7 +61,7 @@ namespace DownloadProfiles
                 httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Basic", base64);
 
 
-                System.Net.Http.HttpResponseMessage activityResponse = await httpClient.GetAsync(String.Format(jiveCommunityUrl + "/api/core/v3/people"));
+                System.Net.Http.HttpResponseMessage activityResponse = await httpClient.GetAsync(String.Format(apiUrl));
 
                 String myActivityResponse = await activityResponse.Content.ReadAsStringAsync();
                 string cleanResponseActivities = myActivityResponse.Replace("throw 'allowIllegalResourceCall is false.';", "");
@@ -92,7 +92,26 @@ namespace DownloadProfiles
 
                     
                 }
-                Console.ReadLine();
+
+                if (myPeople.links != null)
+                {
+                    if (myPeople.links.next != null)
+                    {
+                        getPeople(myPeople.links.next);
+                    }
+                    else
+                    {
+                        Console.ReadLine();
+                    }
+
+                }
+                else
+                {
+                    Console.WriteLine("done");
+                    Console.ReadLine();
+                }
+                
+                
             }
             catch (Exception ex)
             {
