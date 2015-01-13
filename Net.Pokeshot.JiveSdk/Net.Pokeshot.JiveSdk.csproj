@@ -112,6 +112,7 @@
     <Compile Include="Models\Dto\JiveDEAService.cs" />
     <Compile Include="Models\Dto\JiveDEAWeb.cs" />
     <Compile Include="Models\Dto\JiveInstanceDto.cs" />
+    <Compile Include="Models\Dto\JiveTileRegistrationDto.cs" />
     <Compile Include="Models\Dto\OAuthGrantTokenDto.cs" />
     <Compile Include="Models\Dto\OAuthRequestDto.cs" />
     <Compile Include="Models\Dto\UserDto.cs" />
@@ -135,7 +136,6 @@
     <Compile Include="Models\JiveSdkContext.cs" />
     <Compile Include="Models\JiveTileInstance.cs" />
     <Compile Include="Models\JiveTileRegistration.cs" />
-    <Compile Include="Models\ListLinks.cs" />
     <Compile Include="Models\OAuthRequest.cs" />
     <Compile Include="Models\OutcomeType.cs" />
     <Compile Include="Models\Person.cs" />
