@@ -99,6 +99,18 @@
     <Compile Include="Models\Dto\ErrorDto.cs" />
     <Compile Include="Models\Dto\HealthStatusDto.cs" />
     <Compile Include="Models\Dto\JiveAddonRegistrationDto.cs" />
+    <Compile Include="Models\Dto\JiveDEAActionObject.cs" />
+    <Compile Include="Models\Dto\JiveDEAActivity.cs" />
+    <Compile Include="Models\Dto\JiveDEAActivityInstance.cs" />
+    <Compile Include="Models\Dto\JiveDEAActivityInstanceElement.cs" />
+    <Compile Include="Models\Dto\JiveDEAActor.cs" />
+    <Compile Include="Models\Dto\JiveDEAActorProfile.cs" />
+    <Compile Include="Models\Dto\JiveDEAContext.cs" />
+    <Compile Include="Models\Dto\JiveDEADestination.cs" />
+    <Compile Include="Models\Dto\JiveDEAJvm.cs" />
+    <Compile Include="Models\Dto\JiveDEAPaging.cs" />
+    <Compile Include="Models\Dto\JiveDEAService.cs" />
+    <Compile Include="Models\Dto\JiveDEAWeb.cs" />
     <Compile Include="Models\Dto\JiveInstanceDto.cs" />
     <Compile Include="Models\Dto\OAuthGrantTokenDto.cs" />
     <Compile Include="Models\Dto\OAuthRequestDto.cs" />
@@ -123,6 +135,7 @@
     <Compile Include="Models\JiveSdkContext.cs" />
     <Compile Include="Models\JiveTileInstance.cs" />
     <Compile Include="Models\JiveTileRegistration.cs" />
+    <Compile Include="Models\ListLinks.cs" />
     <Compile Include="Models\OAuthRequest.cs" />
     <Compile Include="Models\OutcomeType.cs" />
     <Compile Include="Models\Person.cs" />
