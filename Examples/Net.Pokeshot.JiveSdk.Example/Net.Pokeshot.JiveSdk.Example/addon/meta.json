@@ -1,0 +1,17 @@
+{
+	"package_version":"1.3",
+	"minimum_version":"0070000000",
+	"status":"available",
+	"id":"a06332cd-a8de-4d54-944c-2c453bf38cb2",
+	"type":"client-app",
+	"name":"extension.name",
+	"description":"extension.description",
+	"icon_16":"icon16.png",
+	"icon_48":"icon48.png",
+	"icon_128":"icon128.png",
+	"service_url":"https://myjiveaddon.azurewebsites.net/", 
+	"redirect_url":"https://myjiveaddon.azurewebsites.net/oauth",
+	"health_url":"https://https://myjiveaddon.azurewebsites.net/api/monitoring/health/1",
+	"register_url":"https://myjiveaddon.azurewebsites.net/api/registration/registerjiveinstance",
+	"unregister_url":"https://myjiveaddon.azurewebsites.net/api/registration/registerjiveinstance"
+	}
