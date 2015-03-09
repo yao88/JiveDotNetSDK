@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "ReadData";
+}
+<script src="@(ViewBag.baseUrl)scripts/jivesdk/readdata_script.js"></script>
+
+<h2>ReadData</h2>
+<table class="table">
+    <caption>All registered users</caption>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Compete</th>
+        </tr>
+    </thead>
+    <tbody data-bind="foreach:$root.values">
+        <tr>
+            <th scope="row" data-bind="text:shortId">1</th>
+            <th scope="row" data-bind="text:isComplete">1</th>
+
+        </tr>
+
+    </tbody>
+</table>
+

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Module specificationVersion="1">
+  <ModulePrefs title="Jive .Net Example"
+               description="Example app built using the Jive .Net SDK by Pokeshot/SMZ"
+               author="Nils Heuer"
+               author_affiliation="SMZ SocialMediaZolutions GmbH Co. KG"
+               author_email="nils.heuer@pokeshot-smz.com">
+
+    <!-- Commonly used features -->
+    <Require feature="dynamic-height" />
+    <Require feature="dynamic-width" />
+    <Optional feature="jive-core-v3" />
+    <Require feature="osapi"/>
+    <Require feature="settitle"/>
+    <Require feature="views" />
+    <Require feature="opensocial" version="2.5" />
+    <Require feature="embedded-experiences"/>
+    <Require feature="opensocial-data"/>
+    <Require feature="selection"/>
+    <Require feature="settitle"/>
+    <Require feature="actions">
+     <Param name="action-contributions">
+
+        <![CDATA[
+
+
+<action id="net.pokeshot.jivesdk.example.embeddedProfile" path="jive/tabs/profile" label="Embedded view example" view="embedded.profile" icon="https://myjiveaddon.azurewebsites.net/content/images/icon16.png"/>
+
+]]>
+
+
+
+      </Param>
+    </Require>
+
+    <!-- Icons: 3 sizes, 16x16, 48x48, 128x128 -->
+    <Link rel="Icon"       href="https://myjiveaddon.azurewebsites.net/content/images/icon16.png" />
+    <Link rel="MediumIcon" href="https://myjiveaddon.azurewebsites.net/content/images/icon48.png" />
+    <Link rel="LargeIcon"  href="https://myjiveaddon.azurewebsites.net/content/images/icon128.png" />
+
+
+
+
+    <Optional feature="content-rewrite">
+      <Param name="exclude-url">*</Param>
+    </Optional>
+
+
+  </ModulePrefs>
+
+
+
+  <Content type="html" view="canvas" href="https://myjiveaddon.azurewebsites.net/home" authz="signed" sign_viewer="true"/>
+  <Content type="html" view="canvas.readdata" href="https://myjiveaddon.azurewebsites.net/home/readdata" authz="signed" sign_viewer="true"/>
+  <Content type="html" view="canvas.postdata" href="https://myjiveaddon.azurewebsites.net/home/postdata" authz="signed" sign_viewer="true"/>
+  <Content type="html" view="embedded.profile" href="https://myjiveaddon.azurewebsites.net/embedded/profile" authz="signed" sign_viewer="true"/>
+
+
+
+</Module>

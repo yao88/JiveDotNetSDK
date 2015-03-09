@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<script src="@(ViewBag.baseUrl)scripts/jivesdk/home_script.js"></script>
+<div class="jumbotron">
+    <h1>.Net SDK for Jive Example</h1>
+    <p class="lead">An opensource SDK for creating Jive Add-Ons and REST based applications</p>
+    <p><a href="http://github.com/pokeshot" target="_blank" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Server side</h2>
+        <p>
+            User id: @ViewBag.ownerId <br>
+            User name: @ViewBag.ownerName <br>
+            This request came from: @ViewBag.jiveUrl
+        </p>
+        <p><a class="btn btn-default" href="http://www.pokeshot-smz.com" target="_blank">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Client side</h2>
+        <p data-bind="with:$root.currentUser">Your name: <span data-bind="text:displayName"></span><br />
+        Your latest status update: <span data-bind="html:$data.status"></span><br />
+        You look handsome today: <img src="..." alt="..." class="img-rounded" data-bind="attr:{src:thumbnailUrl, alt:displayName}">
+        </p>
+        <p><a class="btn btn-default" href="http://www.pokeshot-smz.com" target="_blank">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Dynamic UI</h2>
+        
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Status update</label>
+                    <input type="email" class="form-control" placeholder="Write something nice...." data-bind="value:$root.statusUpdate">
+                </div>
+                <button type="submit" class="btn btn-primary" data-bind="click:$root.updateStatus">Submit</button>
+            </form>
+        <br />
+
+        <p><a class="btn btn-default" href="http://www.pokeshot-smz.com" target="_blank">Learn more &raquo;</a></p>
+    </div>
+</div>
