@@ -1,0 +1,12 @@
+{
+    "templates": [],
+	"integrationUser": {},
+    "osapps": [
+        {
+            "url" : "https://myjiveaddon.azurewebsites.net/app.xml?version=1",
+            "id" : "9f184353-36bc-48a3-9c1f-9c4167c608b4",
+            "name" : "Jive .Net Add-On Example",
+            "appPath" : "jivedotnet"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="@ViewBag.baseUrl" />
+    <script>
+            var API_URL = "@ViewBag.baseUrl" + 'api/';
+            var APP_URL = "@ViewBag.baseUrl";
+            var APP_PATH = "@ViewBag.appPath"
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Jive .Net SDK by Pokeshot/SMZ</title>
+    <link href="@(ViewBag.baseUrl)content/bootstrap.css" rel="stylesheet" />
+    <link href="@(ViewBag.baseUrl)content/Site.css" rel="stylesheet" />
+    <script src="@(ViewBag.baseUrl)scripts/jquery-2.1.3.min.js"></script>
+    <script src="@(ViewBag.baseUrl)scripts/bootstrap.js"></script>
+    <script src="@(ViewBag.baseUrl)scripts/knockout-3.3.0.js"></script>
+    <script src="@(ViewBag.baseUrl)scripts/knockout.mapping-latest.js"></script>
+    <script src="@(ViewBag.baseUrl)scripts/jivesdk/general_script.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="navbar-brand" data-bind="click:$root.navigate.bind($data, 'home')">.Net Jive Example</span>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#" data-bind="click:$root.navigate.bind({'title':'Example'}, 'canvas')">Home</a></li>
+                    <li><a href="#" data-bind="click:$root.navigate.bind({'currentUser':$data}, 'canvas.readdata')">Read from server</a></li>
+                    <li><a href="#" data-bind="click:$root.navigate.bind($data, 'canvas.postdata')">Post to server</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - SMZ SocialMediaZolutions GmbH Co. KG</p>
+        </footer>
+    </div>
+
+
+</body>
+</html>

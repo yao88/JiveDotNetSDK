@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\Nils\Documents\Visual Studio 2013\Projects\Net.Pokeshot.JiveSdk.Example\Net.Pokeshot.JiveSdk.Example\obj\Release\Package\PackageTmp" />
+  <setAcl path="C:\Users\Nils\Documents\Visual Studio 2013\Projects\Net.Pokeshot.JiveSdk.Example\Net.Pokeshot.JiveSdk.Example\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="C:\Users\Nils\Documents\Visual Studio 2013\Projects\Net.Pokeshot.JiveSdk.Example\Net.Pokeshot.JiveSdk.Example\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>
